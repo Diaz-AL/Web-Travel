@@ -1,0 +1,739 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   CSS RESET
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Desktop Version */
+@font-face {
+    font-family: 'Happy School';
+    src: url('/assets/font/Happy School.ttf') format('truetype');
+} 
+
+@font-face {
+    font-family: 'Britanica Black';
+    src: url('/assets/font/Britanica Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Britanica Bold';
+    src: url('/assets/font/Britanica Bold.ttf') format('truetype');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+  }
+
+header {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.navbar img {
+    width: 65px;
+    height: 100%;
+    position: relative;
+    top: 5px;
+    margin-left: 50px;
+}
+
+.nav-menu {
+    padding: 10px;
+}
+
+.nav-menu a {
+    display: inline-block;
+    color: white;
+    font-family: 'Railway', sans-serif;
+    font-weight: 600;
+    font-size: 150%;
+    transition: transform .2s ease-out;
+    transition-delay: .1s;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-menu a:hover {
+    transform: scale(1.1);
+    color: gainsboro;
+}
+
+.title-content {
+    position: relative;
+    margin-left: 10px;
+}
+
+.title-content p {
+    color: #14213d;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 130%;
+}
+
+.title-content h1 {
+    color: #14213d;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.img-slider {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #14213d;
+}
+  
+.img-content{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+  
+.img-content input{
+    display: none;
+}
+  
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+  
+.img-content img{
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #14213d;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+  
+.manual-btn:hover{
+    background: #14213d;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+#radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+#radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+#radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+
+.about-contact {
+    display: flex;
+    align-items: center;
+    margin: 0 100px 50px 80px;
+    gap: 20px;
+}
+
+.about-content {
+    margin-top: 100px;
+}
+
+.person-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.person-content img {
+    width: 50px;
+    height: 100%;
+    border: 2px solid gray;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.person-name {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10px 0 10px;
+    row-gap: 2px;
+}
+
+.person-name h3 {
+    color: white;
+    font-family: 'Britanica Black', sans-serif;
+    font-size: 110%;
+}
+
+.person-name h5 {
+    color: white;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 300;
+    font-size: 90%;
+}
+
+.contact {
+    background-color: #14213d;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 25px 25px;
+    margin-top: 60px;
+    margin-left: 25px;
+}
+
+.contact-title {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 40px;
+    justify-content: flex-start;
+}
+
+.contact-title h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 150%;
+    color: white;
+    text-align: center;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.form-content label {
+    color: white;
+    font-family: 'Britanica Bold', sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-content input,
+.form-content textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #14213d;
+}
+
+.form-content select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #14213d;
+}
+
+.form-content button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #14213d;
+    cursor: pointer;
+    transition: transform .2s ease-out, background-color .2s ease-out;
+    transition-delay: .1s;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+.information-title {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-title h1 {
+    color: #14213d;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.information-title h4 {
+    color: #14213d;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.information-title hr {
+    display: inline-block;
+    text-align: left;
+}
+
+.information-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-list li {
+    margin-bottom: 20px;
+}
+
+.list-number {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #14213d;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.list-number h2 {
+    background-color: rgba(69, 69, 69, 0.527);
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.our-package {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px 0;
+    background-image: url(assets/img/1014.jpg);
+}
+
+.our-package h1 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.package {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.package-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.package-content h4 {
+    color: #14213d;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 140%;
+}
+
+.package-content p {
+    color: gray;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    font-size: 100%;
+    margin: 20px 0;
+}
+
+.package-content img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.call-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.call-us h1 {
+    color: #14213d;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 140%;
+}
+
+.call-us p {
+    color: #14213d;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 100%;
+    margin: 20px 0;
+    width: 50%;
+}
+
+.call-us a {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 100%;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px 35px;
+    background-color: #14213d;
+    transition: transform .2s ease-out;
+    transition-delay: .1s;
+}
+
+.call-us a:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    margin: 50px 220px 0 220px;
+    padding: 40px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-family: 'Britanica Black', sans-serif;
+    font-size: 100%;
+    margin-bottom: 15px;
+}
+
+.sosmed {
+    display: block;
+    margin-top: 50px;
+}
+
+.sosmed img {
+    max-width: 25px;
+    margin: 0 10px;
+}
+
+.sosmed p {
+    padding-top: 15px;
+    color: white;
+    font-family: 'Britanica Black', sans-serif;
+    font-size: 100%;
+}
+
+.copyright {
+    display: flex;
+    color: white;
+    font-family: 'Britanica Bold', sans-serif;
+    font-size: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    padding: 0 0 20px 0;
+}
+
+/* Mobile Version */
+
+@media screen and (max-width: 768px) {  
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .about-contact {
+        flex-direction: column;
+    }
+
+    .img-slider {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        border: none;
+        position: relative;
+        bottom: 40px;
+    }
+
+    .slide{
+        width: 20%;
+        transition: 2s;
+    }
+    
+    .navigation-manual {
+        width: 860px;
+    }
+
+    .sosmed {
+        overflow: hidden;
+    }
+
+    .title-content {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .title-content h1 {
+        font-size: 23px;
+    }
+
+    .title-content p {
+        font-size: 85%;
+    }
+
+    .contact {
+        width: 120%;
+        height: auto;
+    }
+
+    .person-content {
+        left: 30%;
+    }
+
+    .information-title h4 {
+        font-size: 20px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .information-list {
+        padding: 0 20px;
+    }
+
+    .package {
+        padding: 0 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 100px 0 100px;
+      }
+      
+    .about-me {
+        font-size: 18px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+      
+    .sosmed {
+        margin-top: 0;
+        text-align: center;
+    }
+      
+    .copyright {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+
+    .form-content input,
+    .form-content textarea {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 834px) {  
+    body {
+        overflow-x: hidden;
+    }
+
+    .about-contact {
+        flex-direction: column;
+    }
+
+    .img-slider {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        border: none;
+        margin: 0 0 20px 20px;
+        border: 3px solid #14213d;
+    }
+
+    .slide{
+        width: 20%;
+        transition: 2s;
+    }
+    
+    .navigation-manual {
+        width: 860px;
+    }
+
+    .sosmed {
+        overflow: hidden;
+    }
+
+    .title-content {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .title-content h1 {
+        font-size: 23px;
+    }
+
+    .title-content p {
+        font-size: 85%;
+    }
+
+    .contact {
+        width: 110%;
+        height: auto;
+    }
+
+    .person-content {
+        left: 37%;
+    }
+
+    .form-content input,
+    .form-content textarea {
+        width: 97%;
+    }
+
+
+    .information-title h4 {
+        font-size: 24px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .information-list {
+        padding: 0 20px;
+    }
+
+    .package {
+        padding: 0 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 100px 0 100px;
+      }
+      
+    .about-me {
+        font-size: 18px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+      
+    .sosmed {
+        margin-top: 0;
+        text-align: center;
+    }
+      
+    .copyright {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+}
