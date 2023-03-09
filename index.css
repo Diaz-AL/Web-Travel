@@ -51,17 +51,17 @@ table {
 /* Desktop Version */
 @font-face {
     font-family: 'Happy School';
-    src: url('/assets/font/Happy School.ttf') format('truetype');
+    src: url('./assets/font/Happy School.ttf') format('truetype');
 } 
 
 @font-face {
     font-family: 'Britanica Black';
-    src: url('/assets/font/Britanica Black.ttf') format('truetype');
+    src: url('./assets/font/Britanica Black.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Britanica Bold';
-    src: url('/assets/font/Britanica Bold.ttf') format('truetype');
+    src: url('./assets/font/Britanica Bold.ttf') format('truetype');
 }
 
 body{
