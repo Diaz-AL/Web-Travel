@@ -797,6 +797,10 @@ footer {
     .package {
         padding: 0 20px;
     }
+	
+    .call-us a {
+	font-size: 90%;
+    }
 
     .footer-content {
         flex-direction: column;
