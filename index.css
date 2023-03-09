@@ -225,7 +225,7 @@ header {
     position: relative;
     z-index: 2;
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
     padding-bottom: 10px;
 }
@@ -584,10 +584,6 @@ footer {
         height: auto;
     }
 
-    .person-content {
-        left: 30%;
-    }
-
     .information-title h4 {
         font-size: 20px;
         padding: 0 20px;
@@ -685,10 +681,6 @@ footer {
         height: auto;
     }
 
-    .person-content {
-        left: 37%;
-    }
-
     .form-content input,
     .form-content textarea {
         width: 97%;
@@ -741,6 +733,7 @@ footer {
 @media only screen and (max-width: 1024px) {  
     body {
         overflow-x: hidden;
+
     }
 
     .about-contact {
@@ -789,10 +782,6 @@ footer {
     .form-content input,
     .form-content textarea {
         width: 97%;
-    }
-
-    .person-content {
-        left: 30%;
     }
 
     .information-title h4 {
