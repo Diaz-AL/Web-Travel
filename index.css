@@ -737,3 +737,103 @@ footer {
         display: none;
     }
 }
+
+@media only screen and (max-width: 1024px) {  
+    body {
+        overflow-x: hidden;
+    }
+
+    .about-contact {
+        flex-direction: column;
+    }
+
+    .img-slider {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        border: none;
+        border: 3px solid #14213d;
+    }
+
+    .slide{
+        width: 20%;
+        transition: 2s;
+    }
+    
+    .navigation-manual {
+        width: 860px;
+    }
+
+    .sosmed {
+        overflow: hidden;
+    }
+
+    .title-content {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .title-content h1 {
+        font-size: 23px;
+    }
+
+    .title-content p {
+        font-size: 85%;
+    }
+
+    .contact {
+        width: 100%;
+        height: auto;
+    }
+
+    .form-content input,
+    .form-content textarea {
+        width: 97%;
+    }
+
+    .person-content {
+        left: 30%;
+    }
+
+    .information-title h4 {
+        font-size: 20px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .information-list {
+        padding: 0 20px;
+    }
+
+    .package {
+        padding: 0 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 100px 0 100px;
+      }
+      
+    .about-me {
+        font-size: 18px;
+        margin-bottom: 0;
+        text-align: center;
+    }
+      
+    .sosmed {
+        margin-top: 0;
+        text-align: center;
+    }
+      
+    .copyright {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .horizontal-line {
+        display: none;
+    }
+}
